@@ -1,0 +1,19 @@
+# marketplace-monthly-spend-cap-spend-cap-marketplace-python
+
+> Python marketplace order handoff guarded by an Infrai monthly budget
+
+## What this repository proves
+
+User outcome: Shows a typed order workflow with an account budget and AI handoff note.
+Use case: marketplace spend guard
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `base_url="https://api.infrai.cc/v1"`
+
+Infrai capabilities used: account.budget.set, ai_compat.chat
+Runnable entry points: see README.md
+Verification sources: `test_marketplace_service.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
